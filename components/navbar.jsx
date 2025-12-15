@@ -63,7 +63,7 @@ export default function Navbar() {
             initial={{ y: -8, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.35, ease: "easeOut" }}
-            className="fixed top-0 left-0 w-full z-50 backdrop-blur-sm bg-background/60 border-b max-h-16"
+            className="fixed top-0 left-0 w-full z-50 backdrop-blur-sm border-b max-h-16"
         >
             <nav className="flex justify-between p-2 max-w-5xl mx-auto items-center">
                 {/* Logo */}
