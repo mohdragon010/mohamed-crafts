@@ -2,6 +2,7 @@
 
 import { Terminal, Code, Palette, Zap, GitGraph } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
 import { motion } from "framer-motion";
 
 export default function Skills() {
@@ -9,22 +10,38 @@ export default function Skills() {
         {
             category: "Frontend Core",
             icon: <Code className="w-5 h-5" />,
-            items: ["HTML5", "CSS3", "JavaScript (ES6+)", "TypeScript", "React", "Next.js"],
+            items: ["HTML5", "CSS3", "JavaScript (ES6+)", "React", "Next.js"],
+            color: "text-blue-500",
+            bgHover: "hover:bg-blue-500/5",
+            borderHover: "hover:border-blue-500/50",
+            badgeHover: "group-hover/card:bg-blue-500/10 group-hover/card:text-blue-500",
         },
         {
             category: "Styling & UI",
             icon: <Palette className="w-5 h-5" />,
             items: ["Tailwind CSS", "Shadcn UI", "Framer Motion", "MUI", "Responsive Design"],
+            color: "text-purple-500",
+            bgHover: "hover:bg-purple-500/5",
+            borderHover: "hover:border-purple-500/50",
+            badgeHover: "group-hover/card:bg-purple-500/10 group-hover/card:text-purple-500",
         },
         {
             category: "State & Logic",
             icon: <Zap className="w-5 h-5" />,
             items: ["Zustand", "React Hook Form", "Zod", "Context API", "Server Actions"],
+            color: "text-yellow-500",
+            bgHover: "hover:bg-yellow-500/5",
+            borderHover: "hover:border-yellow-500/50",
+            badgeHover: "group-hover/card:bg-yellow-500/10 group-hover/card:text-yellow-500",
         },
         {
             category: "Tools & DevOps",
             icon: <GitGraph className="w-5 h-5" />,
-            items: ["Git", "GitHub", "VS Code", "Vercel", "Figma", "Postman"],
+            items: ["Git", "GitHub", "Vercel", "Postman", "Figma"],
+            color: "text-green-500",
+            bgHover: "hover:bg-green-500/5",
+            borderHover: "hover:border-green-500/50",
+            badgeHover: "group-hover/card:bg-green-500/10 group-hover/card:text-green-500",
         },
     ];
 
@@ -48,7 +65,7 @@ export default function Skills() {
                         </h2>
                         <div className="h-1.5 w-24 bg-linear-to-r from-primary/10 via-primary/50 to-primary/10 mt-4 rounded-full mx-auto" />
                         <p className="mt-4 text-muted-foreground text-lg max-w-2xl">
-                            My technical toolbelt for building scalable and performant web applications.
+                            Tools and technologies I use to build clean, modern web interfaces.
                         </p>
                     </motion.div>
                 </div>
@@ -62,24 +79,27 @@ export default function Skills() {
                             viewport={{ once: true }}
                             transition={{ duration: 0.4, delay: index * 0.1 }}
                         >
-                            <Card className="h-full bg-background/50 backdrop-blur-sm border-border/50 hover:border-primary/50 hover:shadow-lg hover:shadow-primary/5 transition-all duration-300 group">
+                            <Card className={`h-full bg-background/50 backdrop-blur-sm border-border/50 shadow-sm hover:shadow-md transition-all duration-300 group/card ${skill.bgHover} ${skill.borderHover}`}>
                                 <CardHeader className="pb-3">
-                                    <CardTitle className="text-lg font-semibold flex items-center gap-2 group-hover:text-primary transition-colors">
-                                        <div className="p-2 rounded-lg bg-secondary/50 text-primary group-hover:bg-primary/10 transition-colors">
-                                            {skill.icon}
-                                        </div>
-                                        {skill.category}
-                                    </CardTitle>
+                                    <div className="flex items-center justify-between">
+                                        <CardTitle className={`text-lg font-semibold flex items-center gap-2 transition-colors ${skill.color}`}>
+                                            <div className="p-2 rounded-lg bg-background border border-border/50 shadow-sm group-hover/card:scale-110 transition-transform duration-300">
+                                                {skill.icon}
+                                            </div>
+                                            {skill.category}
+                                        </CardTitle>
+                                    </div>
                                 </CardHeader>
                                 <CardContent>
                                     <div className="flex flex-wrap gap-2">
                                         {skill.items.map((item, idx) => (
-                                            <span
+                                            <Badge
                                                 key={idx}
-                                                className="inline-flex items-center px-2.5 py-1 rounded-md text-sm font-medium bg-secondary text-secondary-foreground border border-transparent hover:border-primary/20 hover:bg-secondary/80 transition-colors cursor-default"
+                                                variant="secondary"
+                                                className={`px-3 py-1 text-sm bg-background/50 border border-border/50 transition-colors duration-300 cursor-default ${skill.badgeHover}`}
                                             >
                                                 {item}
-                                            </span>
+                                            </Badge>
                                         ))}
                                     </div>
                                 </CardContent>
