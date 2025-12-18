@@ -71,7 +71,7 @@ A web application for discovering, browsing, and exploring Minecraft mods with s
 
 If you’d like to collaborate or have a question, feel free to reach out:
 
-- Email: [your email here]
+- Email: mohammed.ayman152433@gmail.com
 - GitHub: https://github.com/mohdragon010
 
 ---
