@@ -1,36 +1,82 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Mohamed Crafts — Frontend Portfolio
 
-## Getting Started
+A modern frontend developer portfolio showcasing real-world projects, clean UI design, and a strong focus on usability and performance.
 
-First, run the development server:
+## 🔍 Overview
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+This portfolio highlights my experience building production-like frontend applications using modern tools and best practices.  
+The focus is on clean architecture, thoughtful UI, and practical features rather than demos or experiments.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Live: https://mohamed-crafts.vercel.app
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🧩 Featured Projects
 
-## Learn More
+### Ketra — Study Dashboard
+A productivity-focused study dashboard that helps students manage subjects, tasks, notes, and motivation in one place.
 
-To learn more about Next.js, take a look at the following resources:
+**Key features:**
+- Subject-based task management (CRUD)
+- Persistent state with local storage
+- Rich text notes editor
+- External API integration for quotes
+- Light and dark mode support
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**Tech stack:**
+- Next.js
+- React
+- Tailwind CSS
+- Zustand
+- shadcn/ui
+- Tiptap
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+### ModMingle — Minecraft Mod Explorer
+A web application for discovering, browsing, and exploring Minecraft mods with search and filtering capabilities.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+**Key features:**
+- Dynamic routing for mod pages
+- Search and filtering
+- API-driven content
+- Responsive layout
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**Tech stack:**
+- Next.js
+- React
+- Tailwind CSS
+
+---
+
+## 🛠️ Technical Skills
+
+- Frontend: HTML, CSS, JavaScript, React, Next.js
+- Styling & UI: Tailwind CSS, shadcn/ui, MUI
+- State & Forms: Zustand, React Hook Form, Zod
+- Tooling: Git, GitHub, Vercel
+
+---
+
+## 🎯 Design Philosophy
+
+- Clean and minimal UI
+- User-focused interactions
+- Performance-aware components
+- Maintainable and scalable structure
+
+---
+
+## 📬 Contact
+
+If you’d like to collaborate or have a question, feel free to reach out:
+
+- Email: [your email here]
+- GitHub: https://github.com/mohdragon010
+
+---
+
+## 📌 Notes
+
+This portfolio is intentionally minimal and focused.  
+Each project included here represents real work and practical implementation rather than experimental or tutorial-based content.
