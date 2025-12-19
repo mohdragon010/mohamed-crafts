@@ -64,6 +64,35 @@ const projects = [
         type: "Personal Project",
         image: "@/public/modmingle.png"
     },
+    {
+    id: "smart-product-dashboard",
+    title: "Smart Product Dashboard",
+    description:
+        "A frontend dashboard demonstrating advanced client-side state management with filtering, sorting, and derived data.",
+    longDescription:
+        "Smart Product Dashboard is a frontend-focused project that showcases advanced state management patterns on the client side. It includes combined filters, sorting, search, and derived state such as filtered counts and average prices, with a clean and responsive UI. The project intentionally avoids backend complexity to focus on data flow and UI logic.",
+    features: [
+        "Products list with mock data",
+        "Combined filters (category, price range, availability)",
+        "Search by product name",
+        "Sorting by price and rating",
+        "Derived state (filtered count, average price)",
+        "Clean and responsive UI",
+        "Empty and loading states"
+    ],
+    techStack: [
+        "Next.js",
+        "React",
+        "Tailwind CSS",
+        "Zustand",
+        "shadcn/ui"
+    ],
+    liveUrl: "LIVE_DEMO_URL",
+    githubUrl: "GITHUB_REPO_URL",
+    status: "Completed",
+    type: "Personal Project",
+    image: "@/public/smart-product-dashboard.png"
+}
 ];
 
 
