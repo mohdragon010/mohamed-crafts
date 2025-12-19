@@ -87,8 +87,8 @@ const projects = [
         "Zustand",
         "shadcn/ui"
     ],
-    liveUrl: "LIVE_DEMO_URL",
-    githubUrl: "GITHUB_REPO_URL",
+    liveUrl: "https://smart-product-dashboard.vercel.app",
+    githubUrl: "https://github.com/mohdragon010/smart-product-dashboard",
     status: "Completed",
     type: "Personal Project",
     image: "@/public/smart-product-dashboard.png"
