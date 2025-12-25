@@ -26,15 +26,6 @@ export default function Skills() {
             badgeHover: "group-hover/card:bg-purple-500/10 group-hover/card:text-purple-500",
         },
         {
-            category: "State & Logic",
-            icon: <Zap className="w-5 h-5" />,
-            items: ["Zustand", "React Hook Form", "Zod", "Context API", "Server Actions"],
-            color: "text-yellow-500",
-            bgHover: "hover:bg-yellow-500/5",
-            borderHover: "hover:border-yellow-500/50",
-            badgeHover: "group-hover/card:bg-yellow-500/10 group-hover/card:text-yellow-500",
-        },
-        {
             category: "Tools & DevOps",
             icon: <GitGraph className="w-5 h-5" />,
             items: ["Git", "GitHub", "Vercel", "Firebase", "Firestore"],
