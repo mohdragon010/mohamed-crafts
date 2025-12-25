@@ -28,7 +28,7 @@ export default function Skills() {
         {
             category: "Tools & DevOps",
             icon: <GitGraph className="w-5 h-5" />,
-            items: ["Git", "GitHub", "Vercel", "Firebase", "Firestore"],
+            items: ["Git", "GitHub", "Vercel", "Firebase", "Firestore","Zustand"],
             color: "text-green-500",
             bgHover: "hover:bg-green-500/5",
             borderHover: "hover:border-green-500/50",
