@@ -61,7 +61,7 @@ export default function Skills() {
                     </motion.div>
                 </div>
 
-                <div className="grid auto-flow-col auto-cols-max justify-center gap-6">
+<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     {skills.map((skill, index) => (
                         <motion.div
                             key={index}
@@ -69,11 +69,12 @@ export default function Skills() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.4, delay: index * 0.1 }}
+                            className="w-full"
                         >
-                            <Card className={`h-full bg-background/50 backdrop-blur-sm border-border/50 shadow-sm hover:shadow-md transition-all duration-300 group/card ${skill.bgHover} ${skill.borderHover}`}>
+                            <Card className={`h-full bg-background/50 backdrop-blur-sm border-border/50 shadow-sm hover:shadow-lg transition-all duration-300 group/card ${skill.bgHover} ${skill.borderHover}`}>
                                 <CardHeader className="pb-3">
                                     <div className="flex items-center justify-between">
-                                        <CardTitle className={`text-lg font-semibold flex items-center gap-2 transition-colors ${skill.color}`}>
+                                        <CardTitle className={`text-base md:text-lg font-semibold flex items-center gap-2 transition-colors ${skill.color}`}>
                                             <div className="p-2 rounded-lg bg-background border border-border/50 shadow-sm group-hover/card:scale-110 transition-transform duration-300">
                                                 {skill.icon}
                                             </div>
@@ -87,7 +88,7 @@ export default function Skills() {
                                             <Badge
                                                 key={idx}
                                                 variant="secondary"
-                                                className={`px-3 py-1 text-sm bg-background/50 border border-border/50 transition-colors duration-300 cursor-default ${skill.badgeHover}`}
+                                                className={`px-2.5 py-1 text-xs md:text-sm bg-background/50 border border-border/50 transition-all duration-300 cursor-default hover:scale-105 ${skill.badgeHover}`}
                                             >
                                                 {item}
                                             </Badge>
