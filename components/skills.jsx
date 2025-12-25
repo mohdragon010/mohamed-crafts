@@ -61,7 +61,7 @@ export default function Skills() {
                     </motion.div>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 place-items-center w-full">
                     {skills.map((skill, index) => (
                         <motion.div
                             key={index}
