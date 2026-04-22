@@ -96,8 +96,8 @@ const projects = [
       "Shadcn UI",
       "Radix UI",
     ],
-    liveUrl: "https://premium-base-store.vercel.app", // اتأكد من الرابط الفعلي
-    githubUrl: "https://github.com/mohdragon010/premium-base-store",
+    liveUrl: "https://base-store-two.vercel.app",
+    githubUrl: "https://github.com/mohdragon010/base-store",
     status: "Completed",
     type: "Personal Project",
     image: "@/public/premium-base-store.png",
