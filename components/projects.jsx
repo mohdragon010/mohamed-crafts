@@ -100,7 +100,7 @@ const projects = [
     githubUrl: "https://github.com/mohdragon010/base-store",
     status: "Completed",
     type: "Personal Project",
-    image: "@/public/premium-base-store.png",
+    image: "@/public/base-store.png",
   },
   
 ];
