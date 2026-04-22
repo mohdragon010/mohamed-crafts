@@ -38,6 +38,71 @@ const projects = [
     type: "Personal Project",
     image: "@/public/vertex.png",
   },
+  {
+    id: "efham",
+    title: "Efham (افهم) – Learning Management System",
+    description:
+      "A streamlined LMS platform designed to manage educational content, assignments, and quizzes for single-subject environments.",
+    longDescription:
+      "Efham is a dedicated Learning Management System built to bridge the gap between teachers and students. It features a robust Teacher Dashboard for managing students, creating assignments, and building quizzes, alongside a Student Dashboard for submissions and performance tracking. The app utilizes a relational Firestore schema to maintain data integrity across users, grades, and course materials.",
+    features: [
+      "Teacher Dashboard for student and class management",
+      "Quiz Builder and Assignment Hub with deadline tracking",
+      "Student portal for assignment submissions and active quizzes",
+      "Unified Gradebook for manual and automatic performance tracking",
+      "Role-based access control (Teacher vs. Student)",
+      "Real-time data synchronization with Firestore",
+      "Progress monitoring via a dedicated 'My Grades' section",
+      "Clean, distraction-free UI using ShadCN and Tailwind CSS",
+    ],
+    techStack: [
+      "Next.js",
+      "Firebase Authentication",
+      "Cloud Firestore",
+      "Tailwind CSS",
+      "ShadCN",
+      "Zustand",
+    ],
+    liveUrl: "https://efham.vercel.app",
+    githubUrl: "https://github.com/mohdragon010/efham",
+    status: "Completed",
+    type: "Personal Project",
+    image: "@/public/efham.png",
+  },
+  {
+    id: "premium-base-store",
+    title: "Premium Base – Corporate E-Commerce Solution",
+    description:
+      "A high-end, production-ready e-commerce platform featuring a cinematic design, advanced admin customization, and robust security architecture.",
+    longDescription:
+      "Premium Base Store is a modular e-commerce engine built for high-end brands. It features a glassmorphic UI with cinematic elements like dynamic video players and Framer Motion animations. Beyond the storefront, it includes a powerful Admin Dashboard that allows for deep site customization (feature blocks, brand story, and dynamic footers) and implements advanced security through high-level Firestore rules and atomic inventory protection.",
+    features: [
+      "Cinematic Homepage with dynamic hero video and glassmorphic UI",
+      "Advanced Admin Dashboard for full site and inventory management",
+      "Deep customization of feature blocks, brand story, and social links",
+      "High-Security Firestore Rules with Role-Based Access Control (RBAC)",
+      "Atomic Inventory Shield to prevent stock overselling and price tampering",
+      "Premium checkout flow with real-time stock and price integrity",
+      "Dynamic filtering system by categories, price, and arrivals",
+      "Global theming control (logos, brand identity, and accents) from admin",
+      "Fully responsive and optimized for mobile, tablet, and ultra-wide screens",
+    ],
+    techStack: [
+      "Next.js 14",
+      "Firebase / Firestore",
+      "Tailwind CSS",
+      "Framer Motion",
+      "Cloudinary",
+      "Shadcn UI",
+      "Radix UI",
+    ],
+    liveUrl: "https://premium-base-store.vercel.app", // اتأكد من الرابط الفعلي
+    githubUrl: "https://github.com/mohdragon010/premium-base-store",
+    status: "Completed",
+    type: "Personal Project",
+    image: "@/public/premium-base-store.png",
+  },
+  
 ];
 
 
